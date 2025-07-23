@@ -1,11 +1,4 @@
-// ==UserScript==
-// @name         ChatGPT Prompt Auto Insert
-// @namespace    http://tampermonkey.net/
-// @version      3.0
-// @description  Select prompt and auto-insert into ChatGPT's input box.
-// @match        https://chatgpt.com/*
-// @grant        none
-// ==/UserScript==
+
 
 (function () {
   'use strict';
@@ -244,6 +237,8 @@ select.onchange = () => {
       }
       savePrompts();
       refreshOptions(selectedAfter);
+        insertPrompt(prompts[selectedAfter].content);
+
       formWrapper.style.display = "none";
     };
 
