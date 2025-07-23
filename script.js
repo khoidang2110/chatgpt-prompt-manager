@@ -52,7 +52,7 @@
     menuBtn.textContent = "☰";
     menuBtn.style.color = "#000";
     menuBtn.style.fontSize = "20px";
-    menuBtn.style.padding = "6px 10px";
+    menuBtn.style.padding = "6px 12px";
     menuBtn.style.marginBottom = "5px";
     menuBtn.style.borderRadius = "6px";
     menuBtn.style.border = "1px solid #ccc";
