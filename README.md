@@ -1,6 +1,6 @@
 ✨ ChatGPT Prompt Manager
 
-Một tiện ích nhỏ gọn giúp bạn lưu trữ, quản lý và chèn các prompt yêu thích trực tiếp vào ChatGPT mà không cần nhập lại mỗi lần — KHÔNG cần Tampermonkey.
+Một tiện ích nhỏ gọn giúp bạn lưu trữ, quản lý và chèn các prompt yêu thích trực tiếp vào ChatGPT mà không cần nhập lại mỗi lần.
 
 🚀 Tính năng
 
