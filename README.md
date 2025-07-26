@@ -1,51 +1,38 @@
-# ✨ ChatGPT Prompt Manager
+✨ ChatGPT Prompt Manager
 
-Một tiện ích nhỏ gọn chạy trên Tampermonkey, giúp bạn lưu trữ, quản lý và chèn các prompt yêu thích trực tiếp vào ChatGPT mà không cần nhập lại mỗi lần.
+Một tiện ích nhỏ gọn giúp bạn lưu trữ, quản lý và chèn các prompt yêu thích trực tiếp vào ChatGPT mà không cần nhập lại mỗi lần — KHÔNG cần Tampermonkey.
 
-## 🚀 Tính năng
+🚀 Tính năng
 
-- 🧠 Lưu nhiều prompt với **tiêu đề** và **nội dung** đầy đủ
+- 🧠 Lưu nhiều prompt với tiêu đề và nội dung đầy đủ
 - 💬 Nút "Chèn Prompt" để nạp nội dung vào ChatGPT ngay
 - ➕ Thêm, ✏️ sửa, 🗑️ xóa prompt dễ dàng
-- 🔽 Dropdown menu nhỏ gọn, không ảnh hưởng trải nghiệm
-- 📦 Lưu trữ toàn bộ prompt trong `localStorage` trên trình duyệt
+- 🔽 Giao diện dropdown nhỏ gọn, không ảnh hưởng trải nghiệm ChatGPT
+- 📦 Lưu trữ toàn bộ prompt trong localStorage của trình duyệt
 - 🌗 Giao diện có thể mở rộng/thu gọn tiện lợi
-- 🚫 Không chọn prompt nào mặc định — giúp bạn kiểm soát toàn bộ thao tác
+- 🚫 Không chọn prompt nào mặc định — bạn kiểm soát hoàn toàn thao tác
 
-## 📷 Giao diện
+🛠️ Cài đặt (dành cho người dùng cuối)
 
-<img src="screenshot.png" alt="Prompt Manager UI" width="400"/>
+1. Tải file ZIP của extension từ GitHub (nút "Code" > "Download ZIP")
+2. Giải nén file .zip vào một thư mục
+3. Mở trình duyệt Chrome > vào `chrome://extensions`
+4. Bật chế độ "Developer mode" (Chế độ dành cho nhà phát triển) ở góc phải
+5. Click "Load unpacked" (Tải tiện ích chưa đóng gói)
+6. Chọn thư mục bạn vừa giải nén
 
-## 🛠️ Cài đặt
+✅ Sau khi cài đặt, vào https://chat.openai.com sẽ thấy nút ☰ ở góc phải màn hình để mở Prompt Manager.
 
-1. Cài đặt [Tampermonkey](https://www.tampermonkey.net/) cho trình duyệt (Chrome, Edge, Firefox...)
-2. Tạo script mới và dán mã từ file `chatgpt-prompt-manager.user.js`
-3. Lưu lại, reload trang [ChatGPT](https://chat.openai.com/)
+📁 Lưu ý
 
-> ⚠️ Script này chỉ chạy tại: `https://chat.openai.com/*`
+- Dữ liệu được lưu trong localStorage, không gửi ra bên ngoài
+- Nếu muốn reset prompt: DevTools > Application > LocalStorage > xóa key 'chatgpt_prompts'
 
-## 📝 Cách sử dụng
+💡 Dự định tương lai
 
-1. Click nút `☰` ở góc phải để mở Prompt Manager
-2. Chọn một prompt từ danh sách — bạn sẽ thấy tiêu đề và nội dung hiển thị
-3. Muốn thêm/sửa/xoá? Dùng các nút tương ứng:
-   - ➕: Thêm prompt mới
-   - ✏️: Sửa prompt đang chọn
-   - 🗑️: Xóa prompt đang chọn
+- Đồng bộ prompt qua GitHub Gist hoặc Google Drive
+- Giao diện Tailwind / hỗ trợ Dark Mode
+- Gắn tag phân loại cho prompt (ví dụ: #dev, #faq, #chat, v.v.)
 
-## 📁 Lưu ý
-
-- Tất cả dữ liệu được lưu trong **localStorage**, không có gửi đi đâu cả
-- Nếu muốn reset lại, mở DevTools > `Application` > `LocalStorage` > xoá key `chatgpt_prompts`
-
-## 💡 Ý tưởng tương lai
-
-- Đồng bộ qua GitHub Gist / Google Drive
-- Giao diện đẹp hơn (Tailwind hoặc Dark mode)
-- Gắn tag cho prompt (ví dụ: `#dev`, `#design`, `#faq`...)
-
-## 👩‍💻 Được phát triển bởi John  
-Vì mình dùng ChatGPT mỗi ngày và không muốn lặp lại prompt nữa.
-
----
-
+👩‍💻 Được phát triển bởi John
+Vì mình dùng ChatGPT mỗi ngày và không muốn phải lặp lại prompt nữa.
